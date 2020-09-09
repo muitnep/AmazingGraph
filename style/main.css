@@ -1,76 +1,109 @@
 * {
+    box-sizing: border-box;    
     margin: 0;
     padding: 0;
     border: 0;
-    font-size:100%;
+    font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    list-style: none;
 }
 
 :root {
-    --orange:#D2872C;
-    --grey:#766F68;
-    --light-grey: #c5c5b2;
-    --white: #ffffff;
+    
+    --orange: #D2872C;
+    --gray: #766F68;
 }
 
 body {
-    background: var(--white);
-    margin:10px;
+    background:lightyellow;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1660px;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--orange);
+    margin:20px;
 
 }
 
-#container {
-     
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.menu {
+    font-size:1.6rem;
+    color: var(--gray);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.title {
-
-    font-family: 'Roboto', sans-serif;
-    color:var(--orange);
-    font-size: 20px;
-    font-weight: 700;
+.clear {
+    clear: both;
 }
 
-.menu {
-    color: var(--grey);
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    font-weight: 500;
+.content {
+    font-size: 1.6rem;
+    color:var(--gray);
+    font-weight: 400;
 }
 
-#title-content {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    color: var(--grey);
+aside {
+    margin: 0 auto;
+    padding: 10px;;
+    float: right;
+    width:960x;
 }
 
-.content {    
+.team-photo {
+    width:50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    float: right;
+    margin: 10px 10px 0 0;
+    padding:2px;
+}
+
+.main-content {
+    border:  1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-} 
-
-p {
-    margin-top: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-
-}
-
-button {
-    font-family: 'Roboto', sans-serif;
-    color: var(--light-grey);
-    border-radius: 5px;
-    background: var(--orange);
     
 }
 
-img {
-    width: 30%;
-    height: 30%;
+.main-title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:3.5rem;
+    color: var(--gray);
+    font-weight: 700;
+}
+
+.button-start {
+    width: 20vw;
+    height: 12vh;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 15px;
+    text-align: center;
 }
